@@ -80,10 +80,7 @@ function add_to_cart_form_shortcode( $atts ) {
             $single_product->the_post()
             ?>
             <span class="woocommerce-Price-amount amount">
-				<bdi>
-					<span class="woocommerce-Price-currencySymbol">
-						</span><?php woocommerce_template_single_price(); ?>
-				</bdi>
+				<?php woocommerce_template_single_price(); ?>
 			</span>
             <div class="single-product" data-product-page-preselected-id="<?php echo esc_attr( $preselected_id ); ?>">
                 <?php woocommerce_template_single_add_to_cart(); ?>
